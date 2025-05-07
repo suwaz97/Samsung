@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #ffffff !important; 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.navbar-brand {
+  color: #0088ff !important; 
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #0088ff !important;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #04356a !important; 
+}
+
+.navbar-nav .nav-link.active {
+  color: #0056b3 !important;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border-color: #0088ff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230088ff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
+
+.hero-section {
+  height: 100vh; 
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 0 50px;
+  }
+}
+
+.hero-section h1,
+.hero-section p {
+  z-index: 2;
+  position: relative;
+}
+
+#fitur .card {
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+#fitur .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+#fitur .card i {
+  color: #0055ff;
+}
+
+#fitur .card-title {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.left {
+  flex: 1;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    pointer-events: none;
+  }
+  
+  .buttons button {
+    pointer-events: all;
+    background-color: #0088ff; /* warna biru */
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #91c8f8;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      margin-left: 10px;
+    }
+  
+    #fitur .card {
+      margin-bottom: 15px;
+    }
+  
+    .buttons button {
+      font-size: 18px;
+    }
+  
+    .slide-container {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+#spesifikasi {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+#spesifikasi h2 {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+#spesifikasi .table {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#spesifikasi .table th {
+  background-color: #3ca4ff;
+  color: #ffffff;
+  width: 35%;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+#spesifikasi .table td {
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+#spesifikasi .table th,
+#spesifikasi .table td {
+  padding: 14px 20px;
+  border: 1px solid #dee2e6;
+}
+
+#spesifikasi .table tr:hover td {
+  background-color: #f1f7ff;
+  transition: background-color 0.3s ease;
+}
+
+#preorder {
+  background-color: #f0f8ff;
+}
+
+#preorder h2 {
+  font-weight: bold;
+  color: #0066cc;
+}
+
+#preorderForm {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#preorderForm .form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+#preorderForm .form-control,
+#preorderForm .form-select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s;
+}
+
+#preorderForm .form-control:focus,
+#preorderForm .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+#preorderForm button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 50px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+#preorderForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
