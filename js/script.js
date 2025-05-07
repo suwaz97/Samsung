@@ -21,26 +21,24 @@ document.getElementById('preorderForm').addEventListener('submit', function(e) {
     this.reset();
   });
  
-  const slider = document.getElementById("slider");
-    let currentIndex = 0;
+  let currentSlide = 0;
+    const slider = document.getElementById("slider");
+    const totalSlides = document.querySelectorAll(".slide").length;
 
-    function showSlide(index) {
-      const totalSlides = slider.children.length;
-      if (index >= totalSlides) currentIndex = 0;
-      else if (index < 0) currentIndex = totalSlides - 1;
-      else currentIndex = index;
-
-      const offset = -currentIndex * 100;
-      slider.style.transform = `translateX(${offset}%)`;
+    function updateSlide() {
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
 
     function nextSlide() {
-      showSlide(currentIndex + 1);
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
     }
 
     function prevSlide() {
-      showSlide(currentIndex - 1);
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlide();
     }
+
 
   window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');

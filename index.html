@@ -27,29 +27,35 @@
     </nav> 
   </section>
 
-  <section id="home" class="pt-2 mt-2 bg-light hero-section"> 
-    <div class="container py-5">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <h1>Samsung Galaxy A55 5G – Terobosan Teknologi dalam Genggaman</h1>
-              <p class="lead">Desain Elegan, Performa Maksimal</p>
-              <a href="#preorder" class="btn btn-primary">Pre-Order Sekarang</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h1>Samsung Galaxy A55 5G – Terobosan Teknologi dalam Genggaman</h1>
+          <p>Desain Elegan, Performa Maksimal</p>
+          <a href="#preorder" class="btn btn-primary mt-2">Pre-Order Sekarang</a>
+        </div>
+
+        <!-- Slider -->
+        <div class="col-md-6">
+          <div class="slide-wrapper">
+            <div class="slide-container" id="slider">
+              <div class="slide"><img src="image/biru.png" alt="Gambar 1"></div>
+              <div class="slide"><img src="image/kuning.png" alt="Gambar 2"></div>
+              <div class="slide"><img src="image/hitam.png" alt="Gambar 3"></div>
+              <div class="slide"><img src="image/pink.png" alt="Gambar 4"></div>
             </div>
-            <div class="right">
-                <div class="slide-container" id="slider">
-                  <div class="slide"><img src="image/biru.png" alt="Gambar 1" /></div>
-                  <div class="slide"><img src="image/kuning.png" alt="Gambar 2" /></div>
-                  <div class="slide"><img src="image/hitam.png" alt="Gambar 3" /></div>
-                  <div class="slide"><img src="image/pink.png" alt="Gambar 3" /></div>
-                </div>
-                <div class="buttons">
-                  <button onclick="prevSlide()">←</button>
-                  <button onclick="nextSlide()">→</button>
-                </div>
-              </div>
+            <div class="buttons">
+              <button onclick="prevSlide()">←</button>
+              <button onclick="nextSlide()">→</button>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
       <section id="fitur" class="py-5">
         <div class="container">

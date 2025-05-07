@@ -36,137 +36,76 @@ html {
 }
 
 .hero-section {
-  height: 100vh; 
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-color: #f8f9fa;
+  padding: 4rem 0;
 }
 
-@media (min-width: 1024px) {
-  .hero-section {
-    padding: 0 50px;
-  }
+.hero-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.hero-section h1,
 .hero-section p {
-  z-index: 2;
-  position: relative;
-}
-
-#fitur .card {
-  border: none;
-  border-radius: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background: #ffffff;
-}
-
-#fitur .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-#fitur .card i {
-  color: #0055ff;
-}
-
-#fitur .card-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #333;
-  margin-top: 15px;
 }
 
-.left {
-  flex: 1;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.right {
-  flex: 1;
+.slide-wrapper {
   position: relative;
+  max-width: 100%;
+  text-align: center;
   overflow: hidden;
 }
 
 .slide-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
-  }
-  
-  .slide {
-    flex-shrink: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  max-height: 350px;
+  width: auto;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+.buttons button {
+  background-color: #0088ff;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
   }
 
   .slide img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: auto;
+    max-height: 200px;
   }
-  
+
   .buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 20px;
-    pointer-events: none;
+    padding: 0 30px;
   }
-  
-  .buttons button {
-    pointer-events: all;
-    background-color: #0088ff; /* warna biru */
-    border: none;
-    color: white;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .buttons button:hover {
-    background-color: #91c8f8;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-nav .nav-link {
-      margin-left: 10px;
-    }
-  
-    #fitur .card {
-      margin-bottom: 15px;
-    }
-  
-    .buttons button {
-      font-size: 18px;
-    }
-  
-    .slide-container {
-      flex-direction: column;
-    }
-  
-    .left, .right {
-      flex: none;
-      width: 100%;
-    }
-  }
+}
 
 #spesifikasi {
   background-color: #f8f9fa;
